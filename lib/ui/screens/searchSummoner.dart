@@ -15,7 +15,7 @@ class _SearchSummonerState extends State<SearchSummoner> {
     final arguments = (ModalRoute.of(context)?.settings.arguments ??
         <String, dynamic>{}) as Map;
 
-    var api_key = 'RGAPI-18de6b44-7d59-4f53-83ba-23e6ca3e1103';
+    var api_key = '';
     var username = arguments['username'];
 
     Future<String> fetchResultsByUsername(username, api_key) async {
