@@ -19,11 +19,10 @@ class _SearchSummonerState extends State<SearchSummoner> {
     final arguments = (ModalRoute.of(context)?.settings.arguments ??
         <String, dynamic>{}) as Map;
 
-    Future<List<dynamic>>? dataFuture = userDataRepository.getData(arguments['username'], 'RGAPI-bc4d5390-6ed4-4487-a35a-9a885ca29a52');
+    Future<List<dynamic>>? dataFuture = userDataRepository.getUserData(arguments['username'], 'RGAPI-377a756e-18af-4711-a485-b49afd3eb228');
 
-    //api_key = 'RGAPI-bc4d5390-6ed4-4487-a35a-9a885ca29a52';
+    //api_key = 'RGAPI-377a756e-18af-4711-a485-b49afd3eb228';
     //username = arguments['username'];
-
     return Scaffold(
       appBar: AppBar(
         title: Text(arguments['username']),
@@ -61,7 +60,7 @@ class _SearchSummonerState extends State<SearchSummoner> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).pushNamed('/moreInfo');
+          Navigator.of(context).pushNamed('/moreInfo', arguments: {'username': arguments['username']});
         },
         child: const Icon(Icons.addchart_outlined),
       ),
