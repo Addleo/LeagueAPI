@@ -10,7 +10,7 @@ Retourne aussi le pourcentage de victoire (affiché sur la 3e page)
 ### Api
 
 Riot API (https://developer.riotgames.com/)  
-Clé API expire le : Samedi 8 avril 2023 à 20:39 (me contacter pour que je la renouvelle)  
+Clé API expire le : Samedi 8 avril 2023 à 20:39 (me contacter pour que je la renouvelle, si besoin)  
 
 RATE LIMITS  
 20 requêtes toutes les 1 seconde  
