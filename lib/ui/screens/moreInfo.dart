@@ -29,6 +29,7 @@ class _MoreInfoState extends State<MoreInfo> {
           if (snapshot.hasData &&
               snapshot.connectionState == ConnectionState.done) {
             return Container(
+              height: MediaQuery.of(context).size.height / 1.3,
               child: Text(snapshot.data ?? "got null"),
             );
           } else {

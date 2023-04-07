@@ -34,19 +34,19 @@ class _SearchSummonerState extends State<SearchSummoner> {
               itemCount: snapshot.data!.length,
               itemBuilder: (context, index) {
                 if (snapshot.data?[index].toString().substring(
-                        snapshot.data![index].toString().length - 4) ==
-                    " win") {
-                  return ListTile(
+                        snapshot.data![index].toString().length - 3) ==
+                    "win") {
+                  return Card(child : ListTile(
                     tileColor: Colors.blue,
                     title: Text(snapshot.data?[index] ?? "got null"),
                     textColor: Colors.white,
-                  );
+                  ));
                 } else {
-                  return ListTile(
+                  return Card(child: ListTile(
                     tileColor: Colors.red,
                     title: Text(snapshot.data?[index] ?? "got null"),
                     textColor: Colors.white,
-                  );
+                  ));
                 }
               },
             );

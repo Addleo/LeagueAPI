@@ -102,7 +102,7 @@ Future<String> fetchWinrate(
       return wrPercent;
     });
   }
-  return "Vous avez $wrPercent % de victoire sur vos 10 dernières parties.";
+  return "Vous avez $wrPercent % de victoires sur vos 10 dernières parties.";
 }
 
 class UserDataRepository {
