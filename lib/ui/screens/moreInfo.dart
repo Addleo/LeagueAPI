@@ -17,7 +17,7 @@ class _MoreInfoState extends State<MoreInfo> {
         <String, dynamic>{}) as Map;
 
     Future<String>? dataFuture = userDataRepository.getWinrate(
-        arguments['username'], 'RGAPI-bc4d5390-6ed4-4487-a35a-9a885ca29a52');
+        arguments['username'], 'RGAPI-377a756e-18af-4711-a485-b49afd3eb228');
 
     return Scaffold(
       appBar: AppBar(

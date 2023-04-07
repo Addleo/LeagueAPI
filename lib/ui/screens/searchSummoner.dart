@@ -21,8 +21,6 @@ class _SearchSummonerState extends State<SearchSummoner> {
 
     Future<List<dynamic>>? dataFuture = userDataRepository.getUserData(arguments['username'], 'RGAPI-377a756e-18af-4711-a485-b49afd3eb228');
 
-    //api_key = 'RGAPI-377a756e-18af-4711-a485-b49afd3eb228';
-    //username = arguments['username'];
     return Scaffold(
       appBar: AppBar(
         title: Text(arguments['username']),
@@ -30,7 +28,6 @@ class _SearchSummonerState extends State<SearchSummoner> {
       body: FutureBuilder<List<dynamic>>(
         future: dataFuture,
         builder: (context, AsyncSnapshot<List<dynamic>> snapshot) {
-          print("user data : $snapshot");
           if (snapshot.hasData &&
               snapshot.connectionState == ConnectionState.done) {
             return ListView.builder(
