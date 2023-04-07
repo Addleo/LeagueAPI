@@ -12,14 +12,14 @@ class SearchSummoner extends StatefulWidget {
 }
 
 class _SearchSummonerState extends State<SearchSummoner> {
-
   UserDataRepository userDataRepository = UserDataRepository();
 
   Widget build(BuildContext context) {
     final arguments = (ModalRoute.of(context)?.settings.arguments ??
         <String, dynamic>{}) as Map;
 
-    Future<List<dynamic>>? dataFuture = userDataRepository.getUserData(arguments['username'], 'RGAPI-2059ecbc-397f-47c6-8762-c46a3206611d');
+    Future<List<dynamic>>? dataFuture = userDataRepository.getUserData(
+        arguments['username'], 'RGAPI-2059ecbc-397f-47c6-8762-c46a3206611d');
 
     return Scaffold(
       appBar: AppBar(
@@ -51,13 +51,19 @@ class _SearchSummonerState extends State<SearchSummoner> {
               },
             );
           } else {
-            return CircularProgressIndicator();
+              return SizedBox(
+                height: MediaQuery.of(context).size.height / 1.3,
+                child: Center(
+                  child: CircularProgressIndicator(),
+                ),
+              );
           }
         },
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).pushNamed('/moreInfo', arguments: {'username': arguments['username']});
+          Navigator.of(context).pushNamed('/moreInfo',
+              arguments: {'username': arguments['username']});
         },
         child: const Icon(Icons.addchart_outlined),
       ),

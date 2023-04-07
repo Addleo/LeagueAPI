@@ -74,7 +74,7 @@ Future<List<String>> fetchMatches(
                 data['info']['participants'][i]['deaths'].toString() +
                 '/' +
                 data['info']['participants'][i]['assists'].toString() +
-                ' lose');
+                ' loss');
             match_history.add(match_result);
           }
         }

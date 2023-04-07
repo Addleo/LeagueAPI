@@ -32,7 +32,12 @@ class _MoreInfoState extends State<MoreInfo> {
               child: Text(snapshot.data ?? "got null"),
             );
           } else {
-            return CircularProgressIndicator();
+              return SizedBox(
+                height: MediaQuery.of(context).size.height / 1.3,
+                child: Center(
+                  child: CircularProgressIndicator(),
+                ),
+              );
           }
         },
       ),
