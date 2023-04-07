@@ -13,7 +13,7 @@ Riot API (https://developer.riotgames.com/)
 Clé API expire le : Samedi 8 avril 2023 à 20:39 (me contacter pour que je la renouvelle, si besoin)  
 
 RATE LIMITS  
-20 requêtes toutes les 1 seconde  
+20 requêtes toutes les secondes  
 100 requêtes toutes les 2 minutes  
 
 ### Version
