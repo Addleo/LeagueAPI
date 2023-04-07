@@ -19,7 +19,7 @@ class _SearchSummonerState extends State<SearchSummoner> {
     final arguments = (ModalRoute.of(context)?.settings.arguments ??
         <String, dynamic>{}) as Map;
 
-    Future<List<dynamic>>? dataFuture = userDataRepository.getUserData(arguments['username'], 'RGAPI-377a756e-18af-4711-a485-b49afd3eb228');
+    Future<List<dynamic>>? dataFuture = userDataRepository.getUserData(arguments['username'], 'RGAPI-2059ecbc-397f-47c6-8762-c46a3206611d');
 
     return Scaffold(
       appBar: AppBar(

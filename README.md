@@ -1,16 +1,22 @@
 # league_api
 
-A new Flutter project.
+Un projet Flutter créé par Léo Crasnier
 
-## Getting Started
+## Fonctionnalités
 
-This project is a starting point for a Flutter application.
+Rentrer un nom d'utilisateur (Utiliser "Addleo" par exemple) et retourne les scores des 10 derniers matchs
+Retourne aussi le pourcentage de victoire (affiché sur la 3e page)
 
-A few resources to get you started if this is your first Flutter project:
+### Api
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Riot API (https://developer.riotgames.com/)
+Clé API expire le : Samedi 8 avril 2023 à 20:39 (me contacter pour que je la renouvelle)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+RATE LIMITS
+20 requêtes toutes les 1 seconde
+100 requêtes toutes les 2 minutes
+
+### Version
+
+Flutter 3.7.8
+Dart 2.19.5
